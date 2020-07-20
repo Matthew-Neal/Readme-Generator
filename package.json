@@ -1,14 +1,27 @@
 {
-  "name": "static-site",
-  "version": "1.0.0",
-  "description": "",
+  "name": "readme_package",
+  "version": "1.1.1",
+  "description": "Readme Generator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Matthew Neal",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matthew-Neal/Readme-Generator.git"
+  },
+  "keywords": [
+    "Readme",
+    "Generator"
+  ],
+  "bugs": {
+    "url": "https://github.com/Matthew-Neal/Readme-Generator/issues"
+  },
+  "homepage": "https://github.com/Matthew-Neal/Readme-Generator#readme"
 }
