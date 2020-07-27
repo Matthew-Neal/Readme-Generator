@@ -54,7 +54,7 @@ for additional questions
 
 ## Example
 
-<img src="./Assets/Readme_gen Screenshot.png></img>
+<img src="../Assets/Readme_gen Screenshot.png></img>
 
 ## Demonstration
 
