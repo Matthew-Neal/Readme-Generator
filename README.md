@@ -21,7 +21,7 @@ Node Application that created a readme with "good Readme characteristics"
 
 ## Installation:
 
-From terminal run "npm init". Follow instructions to create the readme file. Then run "npm install".
+Clone or Download this Github repository. From terminal (once opened this downloaded folder) run "npm init". Follow instructions to create the readme file. Then run "npm install".
 
 ## App Usage:
 
