@@ -61,7 +61,7 @@ const questions = [
             if (instalInput) {
                 return true;
             } else {
-                console.log("Enter some instructions!");
+                console.log("Enter instructions");
                 return false;
             }
         },
@@ -74,7 +74,7 @@ const questions = [
             if (usageInput) {
                 return true;
             } else {
-                console.log("Enter some instructions!");
+                console.log("Enter instructions");
                 return false;
             }
         },
@@ -83,7 +83,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "What is the licensing for your app?(Required)",
-        choices: ["GPL V3", "EPL 1.0", "MIT", "MPL 2.0"],
+        choices: ["NONE", "GPL V3", "EPL 1.0", "MIT", "MPL 2.0"],
         validate: (licenseInput) => {
             if (licenseInput) {
                 return true;
@@ -168,10 +168,23 @@ function init() {
             );
         }
         function licenseBadge() {
-            if (res.license === "GPL V3") {
+            if (res.license === "NONE") {
                 fs.appendFileSync(
                     "./Product/README.md",
-                    `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`,
+                    `[![License: NONE](https://img.shields.io/badge/License-none-red.svg)](https://choosealicense.com/licenses/)`,
+                    (err) => {
+                        if (err) {
+                            console.log(err);
+                            return;
+                        }
+                        console.log("License is GPL V3!");
+                        table();
+                    }
+                );
+            } else if (res.license === "GPL V3") {
+                fs.appendFileSync(
+                    "./Product/README.md",
+                    `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://choosealicense.com/licenses/gpl-3.0/)`,
                     (err) => {
                         if (err) {
                             console.log(err);
@@ -293,7 +306,7 @@ function init() {
         function licensing() {
             fs.appendFile(
                 "./Product/README.md",
-                `## License Details:  \n The Eclipse Public License (EPL) is a free and open source software license most notably used for the Eclipse IDE and other projects by the Eclipse Foundation.  \n  \n Software under the GPL may be run for all purposes, including commercial purposes and even as a tool for creating proprietary software, such as when using GPL-licensed compilers.  \n  \n The MIT License is a free software license that was created at the Massachusetts Institute of Technology (MIT). It is a permissive license, meaning that it allows programmers to put the code in proprietary software on the condition that the license is given with that software, and GPL-compatible, meaning that the GPL permits programmers to combine and redistribute it with software that uses the MIT License.  \n  \n The MPL is a simple copyleft license. The MPL's "file-level" copyleft is designed to encourage contributors to share modifications they make to your code, while still allowing them to combine your code with code under other licenses (open or proprietary) with minimal restrictions. `,
+                `## License Details:  \n Open source licenses grant permission for anybody to use, modify, and share licensed software for any purpose, subject to conditions preserving the provenance and openness of the software. The following licenses are sorted by the number of conditions, from most (GNU AGPLv3) to none (Unlicense). Notice that the popular licenses featured on the home page (GNU GPLv3 and MIT) fall within this spectrum. `,
                 (err) => {
                     if (err) {
                         console.log(err);

@@ -1,5 +1,5 @@
-# Readme Generator  
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)  
+# readme_generator  
+[![License: NONE](https://img.shields.io/badge/License-none-red.svg)](https://choosealicense.com/licenses/)  
  ## Table of Contents:  
 [1. Description](#Description)  
 [2. Installation](#Installation)  
@@ -9,23 +9,17 @@
 [6. Tests](#Tests)  
 [7. Questions](#Questions)  
 ## Description:
-Node application that will generate a readme file that follows the good readme requirements.
+Node app that coreates a good reeadme file. 
 ## Installation:
-Users should start with npm init from their terminal.
+From terminal run "npm init". This will prompt user to fill data to create a readme. Then run "npm install".
 ## App Usage:
-Once npm init  is ran and info created run npm install. Step 3 is to run "node index.js" and then fill the asked info for the readme. This will create a file in the product folder that is a completed Readme file. 
+Once installed, in terminal run "node index.js". This will ask for the data needed to compile and complete the good readme. 
 ## License Details:  
- The Eclipse Public License (EPL) is a free and open source software license most notably used for the Eclipse IDE and other projects by the Eclipse Foundation.  
-  
- Software under the GPL may be run for all purposes, including commercial purposes and even as a tool for creating proprietary software, such as when using GPL-licensed compilers.  
-  
- The MIT License is a free software license that was created at the Massachusetts Institute of Technology (MIT). It is a permissive license, meaning that it allows programmers to put the code in proprietary software on the condition that the license is given with that software, and GPL-compatible, meaning that the GPL permits programmers to combine and redistribute it with software that uses the MIT License.  
-  
- The MPL is a simple copyleft license. The MPL's "file-level" copyleft is designed to encourage contributors to share modifications they make to your code, while still allowing them to combine your code with code under other licenses (open or proprietary) with minimal restrictions.   
+ Open source licenses grant permission for anybody to use, modify, and share licensed software for any purpose, subject to conditions preserving the provenance and openness of the software. The following licenses are sorted by the number of conditions, from most (GNU AGPLv3) to none (Unlicense). Notice that the popular licenses featured on the home page (GNU GPLv3 and MIT) fall within this spectrum.   
 ## List of Contributors:
 none
 ## Tests:
-functionallity testing
+Functionality Testing
 ## Questions:
  Here is a link to my github:  
 https://github.com/Matthew-Neal  
